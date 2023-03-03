@@ -3,10 +3,9 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send({
-    message:
-      "Go to docs - https://github.com/iamashuu397/All-in-One-Calculator-API#readme",
-  });
+  res.redirect(
+    "https://github.com/iamashuu397/All-in-One-Calculator-API#readme"
+  );
 });
 
 app.get("/2d-shapes-area/rectangle", (req, res) => {
